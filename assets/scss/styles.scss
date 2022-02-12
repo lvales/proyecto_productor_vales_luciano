@@ -1,0 +1,231 @@
+@import "config";
+
+body {
+    font-family: $font;
+    color: $color-text;
+    // background-color: $background;
+    // color: $textColor;
+}
+
+// Reglas varias
+p::first-letter{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.titulos {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5rem 0rem 2rem;
+}
+
+.m-top{
+    margin-top: 7rem;
+}
+
+.btn-primary {
+    background-color: $color-1;
+    border: none;
+}
+
+.btn-secondary {
+    color: #4F4F4F;
+    background-color: $color-3;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    text-decoration: none;
+    background-color: $color-2;
+    color: #4F4F4F;
+}
+
+$width: 5%;
+
+// Fin Reglas varias
+
+// Animaciones - Gradientes
+.grad {
+    height: 10px;
+    background-image: linear-gradient(to right, rgb(125, 248, 162), rgb(5, 185, 20));
+    border-radius: 10px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+// Fin Animaciones - Gradientes
+
+// Banner Grid
+.banner {
+    background: url("../img/banner_mobile.jpg");
+    background-size: cover;
+    height: 98vh;
+}
+
+.banner__titulo {
+    margin-bottom: 10%;
+    color: $color-1;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    height: 19rem;
+
+    a {
+        margin-top: 1rem;
+        border: none;
+        background-color: $color-1;
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+
+    a:hover {
+        background-color: $color-2;
+        color: white;
+    }
+}
+
+@media(min-width: 524px) {
+    .banner {
+        background: url("../img/biker_einstein.jpg");
+        background-size: cover;
+        height: 98vh;
+    }
+
+    .banner__titulo {
+        margin: 0 5% 15% 0;
+        color: $color-1;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 1rem;
+        width: 35rem;
+        height: 15rem;
+        /* animation-name: tituloAnim;
+        animation-duration: 4s; */
+    }
+}
+// Fin Banner
+
+// Seccion servicios
+.servicios__img {
+    width: 100 - $width; //----------------OPERACIÓN SACSS
+    transform: rotateZ(3deg);
+}
+
+.servicios__titulo {
+    h3,
+    h4 {
+        font-size: 1.2rem;
+        text-transform: initial;
+    }
+}
+
+.servicios__lista {
+    ul {
+        list-style-type: none;
+        list-style-position: inside;
+        padding-left: 0;
+    }
+}
+// Fin Seccion productos
+
+// Seccion Clientes
+.tarjetasClientes {
+    h4 {
+        font-family: 'The Nautigal', cursive;
+        text-transform: capitalize;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem 0 0 0;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+.tarjeta {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: .3rem;
+    background-color: $color-3;
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.85);
+    transition: all .5s;
+
+}
+
+.tarjeta__img {
+    width: 95%; //--------------------OPERACIÓN SASS
+}
+
+.tarjeta--bg {
+    @extend .tarjeta;
+    background-color: $color-4;
+}
+
+.tarjeta:hover {
+    background-color: $color-2;
+}
+// Fin Seccion clientes
+
+// Footer
+footer {
+    margin: 0;
+    padding: 2rem 0 1rem 0;
+    background-image: linear-gradient(to top, #ff8014, rgb(221, 154, 9));
+
+    img {
+        width: 30%;
+    }
+
+    ul {
+        text-align: left;
+        padding: 0 0 0 6rem;
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+                line-height: 1.5rem;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $color-2;
+                font-weight: bold;
+            }
+        }
+    }
+}
+// Fin Footer
+
+// Imports
+@import "cotizador";

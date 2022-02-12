@@ -1,0 +1,57 @@
+// Paleta de colores
+$color-1: #ff1493;
+$color-2: #14ff80;
+$color-3: #93ff14;
+$color-4: #fff614;
+$color-5: #ff8014;
+$color-6: #ff141d;
+$color-text: #4F4F4F;
+
+//Background / Text color
+$background: black;
+$textColor: white;
+
+// Fonts
+$font: 'Montserrat', sans-serif;
+
+// Margins/Paddings
+$SpacesSizes: (
+  100:  100%,
+  50:   50%,
+  25:   25%
+);
+
+$MarginsType: (
+  ma: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left
+);
+
+$PaddingsType: (
+  pa: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left
+);
+
+@each $classType, $type in $MarginsType {
+    @each $classSize, $size in $SpacesSizes {
+      .#{$classType}-#{$classSize} {
+        #{$type}: #{$size};
+      }
+    }
+  }
+
+@each $classType, $type in $PaddingsType {
+    @each $classSize, $size in $SpacesSizes {
+      .#{$classType}-#{$classSize} {
+        #{$type}: #{$size};
+      }
+    }
+  }
+
+// Estados
+$promo: true; //Determina el estilo de acuerdo a si existe promocion de precios  - true/false

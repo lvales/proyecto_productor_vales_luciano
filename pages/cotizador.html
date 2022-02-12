@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Assure Seguros">
+    <meta name="copyright" content="2022" />
+    <meta name="description"
+        content="Cotizá en un simple paso el Seguro para tu Auto con Assure Seguros. No des más vueltas y ahorrá hoy con Assure Seguros">
+    <meta name="keywords" content="seguros, precios, moto. auto, coberturas">
+    <title>Cotizador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="animated fadeIn fast">
+    <header>
+        <!-- Barra de navegacion -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+            <a class="navbar-brand" href="../../proyecto-productor-vales-luciano/index.html">
+                <img src="../assets/img/logotipo.png" width="100" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../proyecto-productor-vales-luciano/index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Coberturas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../pages/rc.html">Responsabilidad Civil</a>
+                            <a class="dropdown-item" href="../pages/roboTotal.html">Robo Total</a>
+                            <a class="dropdown-item" href="../pages/dt.html">Destrucción Total</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/cotizador.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes_somos.html">Quienes
+                            Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container m-top">
+        <h2>Precios de Coberturas</h2>
+        <p>Cotizá y obtené en minutos el mejor seguro para tu auto o moto. En las mejores compañías.</p>
+        <form action="../pages/404.html" method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="tipo">Selecciona el tipo de riesgo</label>
+                        <select name="tipo" class="form-control">
+                            <option value="M">Moto</option>
+                            <option value="M">Automóvil</option>
+                            <option value="M">Monopatín</option>
+                            <option value="B">Bicicleta</option>
+                            <option value="M">Celular</option>
+                            <option value="Mo">Mochila</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="tipo">Selecciona la marca</label>
+                        <select name="tipo" class="form-control">
+                            <option value="M">Honda</option>
+                            <option value="M">Yamaha</option>
+                            <option value="M">Suzuki</option>
+                            <option value="B">Rouser</option>
+                            <option value="M">Kawasaki</option>
+                            <option value="Mo">Zanella</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="tipo">Selecciona el modelo</label>
+                        <select name="tipo" class="form-control">
+                            <option value="M">CB 190</option>
+                            <option value="M">Xr 150 l</option>
+                            <option value="M">XTZ 250 Tenere</option>
+                            <option value="B">Twister</option>
+                            <option value="M">Ninja 250</option>
+                            <option value="Mo">African Twin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col text-right">
+                    <button class="btn btn-outline-danger" type="reset">Borrar formulario</button>
+                    <button class="btn btn-primary btnEnviar" type="submit">Cotizar</button>
+                </div>
+            </div>
+        </form>
+        <div class="row text-center my-5">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsabilidad Civil</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                            consectetur
+                            id nostrum blanditiis voluptate porro autem corrupti dolor amet dolore provident sed,
+                            cupiditate quo dicta temporibus, eveniet atque? Inventore, fuga.</p>
+                        <p class="card__precio card__precio--anterior">$1.800</p>
+                        <p class="card__precio">$1.590</p>
+                        <button class="btn-lg btn-primary">Contratar</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-lg btn-secondary" data-toggle="modal" data-target="#Modal">
+                            Saber más...
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Para consultas deberás contar
+                                            con
+                                            lo siguiente
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Documento de identidad</p>
+                                        <p>Cedula Verde</p>
+                                        <p>Factura de compra</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Consultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Total</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio
+                            esse,
+                            quasi odit reiciendis molestiae tempora laborum iste voluptates ipsam soluta dolore
+                            officiis
+                            corrupti incidunt maiores debitis pariatur enim distinctio.</p>
+                        <p class="card__precio card__precio--anterior">$2.800</p>
+                        <p class="card__precio">$2.650</p>
+                        <button class="btn-lg btn-primary">Contratar</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-lg btn-secondary" data-toggle="modal" data-target="#Modal">
+                            Saber más...
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Para consultas deberás contar
+                                            con
+                                            lo siguiente
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Documento de identidad</p>
+                                        <p>Cedula Verde</p>
+                                        <p>Factura de compra</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Consultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Destruccion Total</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio tempore
+                            nobis repellendus nemo consequuntur dolore, quisquam provident ut veritatis molestias,
+                            quo
+                            nam eos minus vitae quis asperiores, adipisci accusantium.</p>
+                        <p class="card__precio card__precio--anterior">$3.100</p>
+                        <p class="card__precio">$2.990</p>
+                        <button class="btn-lg btn-primary">Contratar</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-lg btn-secondary" data-toggle="modal" data-target="#Modal">
+                            Saber más...
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Para consultas deberás contar
+                                            con
+                                            lo siguiente
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Documento de identidad</p>
+                                        <p>Cedula Verde</p>
+                                        <p>Factura de compra</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Consultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="d-flex text-center align-items-center">
+            <!-- Logo -->
+            <div class="col-md-4">
+                <img class="logoFooter" src="../assets/img/logotipo_w.png" alt="Logo empresa">
+            </div>
+
+            <!-- Links -->
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Coberturas</a></li>
+                    <li><a href="">Cotizador</a></li>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes -->
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Assure Seguros">
+    <meta name="copyright" content="2022" />
+    <meta name="description" content="Contactanos. Estamos para ayudarte. Dejanos tu consulta">
+    <meta name="keywords" content="contacto, seguro, motos, autos">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="animated fadeIn fast">
+    <header>
+        <!-- Barra de navegacion -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+            <a class="navbar-brand" href="../../proyecto-productor-vales-luciano/index.html">
+                <img src="../assets/img/logotipo.png" width="100" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../proyecto-productor-vales-luciano/index.html">Inicio <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Coberturas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../pages/rc.html">Responsabilidad Civil</a>
+                            <a class="dropdown-item" href="../pages/roboTotal.html">Robo Total</a>
+                            <a class="dropdown-item" href="../pages/dt.html">Destrucción Total</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cotizador.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes_somos.html">Quienes
+                            Somos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container m-top">
+        <h2>Contacto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti aperiam vero nam ad, odit facere nobis
+            quidem ipsum deserunt optio possimus nihil reiciendis, qui molestiae saepe quia dolore est!</p>
+        <div class="row my-md-5">
+            <div class="col-md-6 text-center">
+                <img width="90%" src="../assets/img/marilyn.jpg" alt="Foto Marilyn">
+            </div>
+            <div class="col-md-6 p-4">
+                <!-- Formulario de contacto -->
+                <form action="../pages/404.html" method="post">
+                    <div class="form-group">
+                        <!-- <label for="nombre">Nombre</label> -->
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" />
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="apellido">Apellido</label> -->
+                        <input type="text" class="form-control" name="apellido" placeholder="Apellido" />
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="aseg" />
+                        <label for="aseg" class="form-check-label">Soy asegurado</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="aseg" />
+                        <label for="aseg" class="form-check-label">No soy asegurado</label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="comentario">Comentarios</label>
+                        <textarea name="comentario" class="form-control" cols="30" rows="5"
+                            placeholder="Escribí tus comentarios aquí"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Selecciona el tipo de riesgo</label>
+                        <select name="tipo" class="form-control">
+                            <option value="M">Moto</option>
+                            <option value="M">Automóvil</option>
+                            <option value="M">Monopatín</option>
+                            <option value="B">Bicicleta</option>
+                            <option value="M">Celular</option>
+                            <option value="Mo">Mochila</option>
+                        </select>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-outline-danger" type="reset">Resetear formulario</button>
+                        <button class="btn btn-primary btnEnviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="d-flex text-center align-items-center">
+            <!-- Logo -->
+            <div class="col-md-4">
+                <img class="logoFooter" src="../assets/img/logotipo_w.png" alt="Logo empresa">
+            </div>
+
+            <!-- Links -->
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Coberturas</a></li>
+                    <li><a href="">Cotizador</a></li>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes -->
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
