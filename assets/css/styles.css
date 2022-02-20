@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&family=The+Nautigal:wght@400;700&display=swap");
 .ma-100 {
   margin: 100%;
 }
@@ -201,50 +202,90 @@ p::first-letter {
           animation-name: fadeIn;
 }
 
-.banner {
-  background: url("../img/banner_mobile.jpg");
-  background-size: cover;
-  height: 98vh;
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
 }
 
-.banner__titulo {
-  margin-bottom: 10%;
-  color: #ff1493;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 1rem;
-  height: 19rem;
+.navbar {
+  padding: 20px 80px;
 }
 
-.banner__titulo a {
-  margin-top: 1rem;
+.nav-item {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler {
+  border: navajowhite;
+  color: #fff;
+  border: 2px solid #ff1493;
+  border-radius: none;
+  outline: none;
+}
+
+.dropdown-menu {
+  background: #343a40 !important;
   border: none;
-  background-color: #ff1493;
-  color: white;
-  font-weight: bold;
-  padding: 1rem;
-  border-radius: .5rem;
 }
 
-.banner__titulo a:hover {
-  background-color: #14ff80;
-  color: white;
+.dropdown-item {
+  color: #fff;
+  font-weight: bolder;
 }
 
-@media (min-width: 524px) {
-  .banner {
-    background: url("../img/biker_einstein.jpg");
-    background-size: cover;
-    height: 98vh;
+.banner {
+  position: relative;
+  background: url(../img/biker_einstein.jpg);
+  min-height: 98vh;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200pX;
+}
+
+.banner h2 {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: 'Bangers', serif;
+  font-size: 10vh;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: #ff1493;
+  -webkit-transform: rotateZ(350deg);
+          transform: rotateZ(350deg);
+  text-shadow: 0.07em 0.03em 0 #14ff80;
+}
+
+.btnCotizar {
+  display: inline-block;
+  margin: 1rem 0 0;
+  background: #ff1493;
+  color: #14ff80;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.btnCotizar:hover {
+  background: #14ff80;
+  color: #4F4F4F;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 40px;
   }
-  .banner__titulo {
-    margin: 0 5% 15% 0;
-    color: #ff1493;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 1rem;
-    width: 35rem;
-    height: 15rem;
-    /* animation-name: tituloAnim;
-        animation-duration: 4s; */
+  .banner {
+    background: url(/assets/img/banner_mobile.jpg);
+  }
+  .banner h2 {
+    font-size: 3rem;
   }
 }
 
@@ -301,9 +342,14 @@ p::first-letter {
   background-color: #14ff80;
 }
 
+.imgfooter {
+  margin: 0;
+  line-height: 0;
+}
+
 .footer-clean {
   padding: 50px 0;
-  background-color: #464545;
+  background-color: #343a40;
   color: #ffffff;
 }
 
