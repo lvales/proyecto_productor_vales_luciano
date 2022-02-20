@@ -84,8 +84,7 @@ $width: 5%;
 //fadeI
 // Fin Animaciones - Gradientes
 
-// Banner Grid
-// *********************************************************************
+// Nav BAr
 .header {
   position: absolute;
   z-index: 10;
@@ -102,7 +101,7 @@ $width: 5%;
   color: #ffffff;
 }
 
-.navbar-dark .navbar-toggler{
+.navbar-dark .navbar-toggler {
   border: navajowhite;
   color: #fff;
   border: 2px solid $color-1;
@@ -110,23 +109,30 @@ $width: 5%;
   outline: none;
 }
 
-.dropdown-menu{
-  background: #343a40!important;
+.dropdown-menu {
+  background: #343a40 !important;
   border: none;
 }
 
-.dropdown-item{
+.dropdown-item {
   color: #fff;
   font-weight: bolder;
 }
 
+.bg-inverse {
+  background: #343a40 !important;
+}
+
+// Fin Nav Bar
+
+// Banner Grid
 .banner {
   position: relative;
   background: url(../img/biker_einstein.jpg);
   min-height: 98vh;
   background-size: cover;
   background-position: center;
-  padding: 250px 0 200pX;
+  padding: 180px 0 200pX;
 
   h2 {
     margin: 0 0 30px 0;
@@ -142,7 +148,7 @@ $width: 5%;
   }
 }
 
-.btnCotizar{
+.btnCotizar {
   display: inline-block;
   margin: 1rem 0 0;
   background: $color-1;
@@ -153,25 +159,31 @@ $width: 5%;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 4vh;
   font-weight: 800;
 }
 
-.btnCotizar:hover{
+.btnCotizar:hover {
   background: $color-2;
   color: $color-text;
   text-decoration: none;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 
   .navbar {
     padding: 20px 40px;
   }
 
-  .banner{
-      background: url(../img/banner_mobile.jpg);
-    h2{
+  .banner {
+    position: relative;
+    background: url(../img/banner_mobile.jpg);
+    min-height: 98vh;
+    background-size: cover;
+    // background-position: center;
+    padding-top: 250px;
+
+    h2 {
       font-size: 3rem;
     }
   }
@@ -245,7 +257,7 @@ $width: 5%;
 // Fin Seccion clientes
 
 // Footer
-.imgfooter{
+.imgfooter {
   margin: 0;
   line-height: 0;
 }

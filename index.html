@@ -18,7 +18,7 @@
 <body class="animated fadeIn fast">
     <header>
         <!-- Barra de navegacion -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logotipo_w.png" width="100"
                     class="d-inline-block align-top" alt="Logotipo Assure">
@@ -67,9 +67,7 @@
                 <div class="col-sm-6"></div>
                 <div class="col-sm-6 text-center">
                     <h2 class="title">
-                        <span>Un seguro</span>
-                        <span>que puedo</span>
-                        <span>entender</span>
+                        LLego el seguro que puedo <br> entender
                     </h2>
                     <!-- <h2>Un seguros que yo puedo entender!</h2> -->
                     <a href="/pages/cotizador.html" class="btnCotizar">COTIZÁ AHORA </a>
@@ -177,7 +175,7 @@
         </div>
     </section>
 
-    <!-- Pie de pagina -->
+    <!-- Footer -->
     <div class="imgfooter">
         <img width="100%" src="assets/svg/imgFooter.png" alt="footer">
     </div>
@@ -217,6 +215,15 @@
     </footer>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($("#menu").offset().top >70){
+                $("#menu").addClass("bg-inverse shadow");
+            }else{
+                $("#menu").removeClass("bg-inverse shadow");
+            }
+        });
+    </script>
 </body>
 
 </html>

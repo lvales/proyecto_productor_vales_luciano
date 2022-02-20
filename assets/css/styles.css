@@ -236,13 +236,17 @@ p::first-letter {
   font-weight: bolder;
 }
 
+.bg-inverse {
+  background: #343a40 !important;
+}
+
 .banner {
   position: relative;
   background: url(../img/biker_einstein.jpg);
   min-height: 98vh;
   background-size: cover;
   background-position: center;
-  padding: 250px 0 200pX;
+  padding: 180px 0 200pX;
 }
 
 .banner h2 {
@@ -267,7 +271,7 @@ p::first-letter {
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 4vh;
   font-weight: 800;
 }
 
@@ -282,7 +286,11 @@ p::first-letter {
     padding: 20px 40px;
   }
   .banner {
+    position: relative;
     background: url(../img/banner_mobile.jpg);
+    min-height: 98vh;
+    background-size: cover;
+    padding-top: 250px;
   }
   .banner h2 {
     font-size: 3rem;
