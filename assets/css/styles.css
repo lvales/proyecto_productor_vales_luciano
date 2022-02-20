@@ -238,7 +238,7 @@ p::first-letter {
 
 .banner {
   position: relative;
-  background: url(assets//img/biker_einstein.jpg);
+  background: url(../img/biker_einstein.jpg);
   min-height: 98vh;
   background-size: cover;
   background-position: center;
@@ -282,7 +282,7 @@ p::first-letter {
     padding: 20px 40px;
   }
   .banner {
-    background: url(/assets/img/banner_mobile.jpg);
+    background: url(../img/banner_mobile.jpg);
   }
   .banner h2 {
     font-size: 3rem;
