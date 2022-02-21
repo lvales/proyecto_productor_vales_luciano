@@ -84,6 +84,9 @@ $width: 5%;
 //fadeI
 // Fin Animaciones - Gradientes
 
+.black{
+  background-color: black;
+}
 // Nav BAr
 .header {
   position: absolute;
@@ -109,12 +112,12 @@ $width: 5%;
   outline: none;
 }
 
-.dropdown-menu {
+.dropdown-menu_dark{
   background: #343a40 !important;
   border: none;
 }
 
-.dropdown-item {
+.dropdown-item_dack {
   color: #fff;
   font-weight: bolder;
 }

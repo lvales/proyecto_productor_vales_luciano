@@ -202,6 +202,10 @@ p::first-letter {
           animation-name: fadeIn;
 }
 
+.black {
+  background-color: black;
+}
+
 .header {
   position: absolute;
   z-index: 10;
@@ -226,12 +230,12 @@ p::first-letter {
   outline: none;
 }
 
-.dropdown-menu {
+.dropdown-menu_dark {
   background: #343a40 !important;
   border: none;
 }
 
-.dropdown-item {
+.dropdown-item_dack {
   color: #fff;
   font-weight: bolder;
 }
