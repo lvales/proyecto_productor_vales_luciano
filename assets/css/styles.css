@@ -342,6 +342,12 @@ p::first-letter {
   transition: all .5s;
 }
 
+@media (max-width: 991px) {
+  .tarjeta__disabled {
+    display: none;
+  }
+}
+
 .tarjeta__img {
   width: 95%;
 }
@@ -394,19 +400,6 @@ p::first-letter {
   text-align: right;
 }
 
-@media (max-width: 767px) {
-  .footer-clean .item {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-clean .item.social {
-    text-align: center;
-  }
-}
-
 .footer-clean .item.social > a {
   font-size: 24px;
   width: 40px;
@@ -426,15 +419,22 @@ p::first-letter {
   opacity: 0.9;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-clean .item.social {
+    text-align: center;
+  }
   .footer-clean .item.social > a {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .footer-clean .item.social > a {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -443,6 +443,12 @@ p::first-letter {
   margin-bottom: 0;
   font-size: 13px;
   opacity: 0.6;
+}
+
+@media (max-width: 991px) {
+  .title-rc {
+    font-size: 1.2rem;
+  }
 }
 
 .card__precio {
@@ -455,5 +461,11 @@ p::first-letter {
   color: #ff141d;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+}
+
+@media (max-width: 768px) {
+  .sm-disabled {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

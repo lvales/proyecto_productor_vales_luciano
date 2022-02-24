@@ -84,9 +84,10 @@ $width: 5%;
 //fadeI
 // Fin Animaciones - Gradientes
 
-.black{
+.black {
   background-color: black;
 }
+
 // Nav BAr
 .header {
   position: absolute;
@@ -112,7 +113,7 @@ $width: 5%;
   outline: none;
 }
 
-.dropdown-menu_dark{
+.dropdown-menu_dark {
   background: #343a40 !important;
   border: none;
 }
@@ -241,7 +242,12 @@ $width: 5%;
   background-color: $color-3;
   box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.85);
   transition: all .5s;
+}
 
+@media (max-width:991px) {
+  .tarjeta__disabled {
+    display: none;
+  }
 }
 
 .tarjeta__img {
@@ -300,19 +306,6 @@ $width: 5%;
   text-align: right;
 }
 
-@media (max-width:767px) {
-  .footer-clean .item {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-clean .item.social {
-    text-align: center;
-  }
-}
-
 .footer-clean .item.social>a {
   font-size: 24px;
   width: 40px;
@@ -332,15 +325,24 @@ $width: 5%;
   opacity: 0.9;
 }
 
-@media (max-width:991px) {
+@media (max-width: 768px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-clean .item.social {
+    text-align: center;
+  }
+
   .footer-clean .item.social>a {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width:991px) {
   .footer-clean .item.social>a {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -353,5 +355,44 @@ $width: 5%;
 
 // Fin Footer
 
-// Imports
-@import "cotizador";
+// Tarjetas cotizador
+@media (max-width:991px) {
+  .title-rc{
+    font-size: 1.2rem;
+  }
+}
+
+.card__precio {
+  @if $promo==true {
+    color: $color-3;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @else {
+    color: $color-text;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.card__precio--anterior {
+  @if $promo==true {
+    color: $color-6;
+    text-decoration-line: line-through;
+  }
+
+  @else {
+    display: none;
+  }
+}
+
+// Fin Tarjetas cotizador
+
+//Contactanos
+@media (max-width:768px) {
+  .sm-disabled {
+    display: none;
+  }
+}
+
