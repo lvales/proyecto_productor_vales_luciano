@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Assure Seguros">
+    <meta name="copyright" content="2022" />
+    <meta name="description" content="Assure broker de seguros fáciles e inteligentes donde encontraras el asesoramiento que necesitas">
+    <meta name="keywords" content="segruros, motos, autos, responsabilidad civil, robo, siniestro, accidente, destrucción total, compañía de seguros">
+    <title>Assure Seguros</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="animated fadeIn fast">
+    <header>
+        <!-- Barra de navegacion -->
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logotipo_w.png" width="100"
+                    class="d-inline-block align-top" alt="Logotipo Assure">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Coberturas
+                        </a>
+                        <div class="dropdown-menu dropdown-menu_dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item dropdown-item_dack"
+                                href="pages/rc.html">Responsabilidad Civil</a>
+                            <a class="dropdown-item dropdown-item_dack"
+                                href="pages/roboTotal.html">Robo Total</a>
+                            <a class="dropdown-item dropdown-item_dack"
+                                href="pages/dt.html">Destrucción Total</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/cotizador.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/quienes_somos.html">Quienes
+                            Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="pages/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6 text-center">
+                    <h2 class="title">
+                        LLego el seguro que puedo <br> entender
+                    </h2>
+                    <a href="proyecto_productor_vales_luciano/pages/cotizador.html" class="btnCotizar">COTIZÁ AHORA </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion servicios -->
+    <section class="container">
+        <article class="servicios">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="titulos">ponemos a tu alcance las mejores coberturas</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <img class="servicios__img" src="assets/img/segurosmoto.jpg" alt="Seguros personales">
+                </div>
+                <div class="servicios__titulo servicios__lista col-md-6 px-2 p-md-5 d-flex justify-content-center">
+                    <div class="mt-md-5">
+                        <h3>Nikola Tesla elige estas coberturas</h3>
+                        <ul>
+                            <li>
+                                <p>Responsabilidad Civil</p>
+                            </li>
+                            <li>
+                                <p>Robo Total</p>
+                            </li>
+                            <li>
+                                <p>Daño Total</p>
+                            </li>
+                            <li>
+                                <p>Daño Parcial (al amparo del robo total)</p>
+                            </li>
+                            <li>
+                                <p>Reposición de 0Km durate el primer año</p>
+                            </li>
+                        </ul>
+                        <h4>Nivel de protección</h4>
+                        <div class="grad"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Opiniones clientes -->
+    <section class="container">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="titulos">Clientes contentos</h2>
+                <p>
+                    Un cliente satisfecho es un cliente fiel, un cliente que se vuelve parte de la familia del negocio, un cliente valioso. Por eso priorizamos su satisfacción y la procuramos con gran esfuerzo.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center tarjetasClientes">
+            <div class="col-md-5 col-lg-3 m-3 tarjeta">
+                <img class="tarjeta__img" src="assets/img/iconfinder-1.png" alt="personas contentas" />
+                <h4>Thomas edison</h4>
+                <p>Assure siempre nos atiende de manera cordial y eficiente, solucionando nuestras inquietudes y
+                    ocupándose de revolver los problemas que escapan de nuestras manos por falta de conocimiento.
+                    Realmente es agradable recibir un trato servicial, en la solución de nuestras inquietudes.</p>
+            </div>
+            <div class="col-md-5 col-lg-3 m-3 tarjeta--bg">
+                <img class="tarjeta__img" src="assets/img/iconfinder-7.png" alt="personas contentas" />
+                <h4>Mona Lisa</h4>
+                <p>Assure siempre nos atiende de manera cordial y eficiente, solucionando nuestras inquietudes y
+                    ocupándose de revolver los problemas que escapan de nuestras manos por falta de conocimiento.
+                    Realmente es agradable recibir un trato servicial, en la solución de nuestras inquietudes.</p>
+            </div>
+            <div class="col-md-3 m-3 tarjeta tarjeta__disabled">
+                <img class="tarjeta__img" src="assets/img/iconfinder-4.png" alt="personas contentas" />
+                <h4>Benjamin Franklin</h4>
+                <p>Después de varias decepciones con otras empresas, Assure logró materializar mi idea en poco tiempo,
+                    cumpliendo cabalmente con todos y cada una de los detalles de mi proyecto. Con gran satisfacción
+                    puedo afirmar la calidad y efectividad de su servicio.</p><br><br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion compañias -->
+    <section class="container">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="titulos">Compañias que confian en nosotros</h2>
+                <p>
+                    Cada compañía que nos hace saber lo contento y satisfecho que se siente con nuestro servicio, nos impulsa a mejorar, a esforzarnos por satisfacer cada día a más… Gracias por el apoyo, gracias de verdad.
+                </p>
+            </div>
+        </div>
+        <div class="row text-center m-5">
+            <div class="col-lg-3 col-md-6"><img src="assets/img/galenoart.jpg" alt="" /></div>
+            <div class="col-lg-3 col-md-6"><img src="assets/img/zurich.jpg" alt="" /></div>
+            <div class="col-lg-3 col-md-6"><img src="assets/img/mercantil.jpg" alt="" /></div>
+            <div class="col-lg-3 col-md-6"><img src="assets/img/galenoart.jpg" alt="" /></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="imgfooter mt-5">
+        <img width="100%" src="assets/svg/imgFooter.png" alt="footer">
+    </div>
+    
+    <footer class="footer-clean">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Seguro Automotor</a></li>
+                        <li><a href="#">Segurio Motos</a></li>
+                        <li><a href="#">Seguro Hogar</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Sobre nosotros</h3>
+                    <ul>
+                        <li><a href="#">Compañía</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>SSN</h3>
+                    <ul>
+                        <li><a href="#">Super Intendencia de Seguros</a></li>
+                        <li><a href="#">Atención al asegurado</a></li>
+                        <li><a href="#">Protección de datos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Assure © 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script>
+        $(window).scroll(function(){
+            if ($("#menu").offset().top >70){
+                $("#menu").addClass("bg-inverse shadow");
+            }else{
+                $("#menu").removeClass("bg-inverse shadow");
+            }
+        });
+    </script> -->
+</body>
+
+</html>
